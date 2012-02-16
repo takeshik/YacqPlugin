@@ -59,7 +59,7 @@ namespace YacqPlugin
         {
             Task.Factory.StartNew(() =>
             {
-                NotifyStorage.Notify("YACQスクリプトの読み込みを開始しました");
+                NotifyStorage.Notify("YACQ スクリプトの読み込みを開始しました");
                 try
                 {
                     Directory.EnumerateFiles(
@@ -74,7 +74,7 @@ namespace YacqPlugin
                     .ForEach(this.RunCode);
                 }
                 catch { }
-                NotifyStorage.Notify("YACQスクリプトの読み込みが完了しました");
+                NotifyStorage.Notify("YACQ スクリプトの読み込みが完了しました");
             });
 
             KernelService.AddMenu("YACQ コンソール", () => new ReplWindow().Show());

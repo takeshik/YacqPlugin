@@ -1,7 +1,7 @@
 ﻿The MIT License
 
 YACQ Plugin - Copyright © 2011 azyobuzin
-YACQ - Copyright © 2011 Takeshi KIRIYA (aka takeshik) <takeshik@users.sf.net> All rights reserved.
+YACQ - Copyright © 2011 Takeshi KIRIYA (aka takeshik) <takeshik@yacq.net> All rights reserved.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

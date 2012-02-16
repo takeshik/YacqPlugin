@@ -1,0 +1,8 @@
+﻿(load "cts:Inscribe")
+(load "cts:Inscribe.Common")
+(load "cts:Inscribe.Communication")
+(load "cts:Inscribe.Communication.Posting")
+(load "cts:Inscribe.Core")
+(load "cts:Inscribe.Filter")
+(load "cts:Inscribe.Filter.Core")
+(load "cts:Inscribe.Storage")
