@@ -15,6 +15,12 @@ namespace YacqPlugin
     [Export(typeof(IFilter))]
     public partial class YacqFilter : FilterBase
     {
+        public static SymbolTable FilterSymbols
+        {
+            get;
+            private set;
+        }
+
         private Lazy<Func<TwitterStatusBase, bool>> _compiled;
 
         private bool _failed;
@@ -107,6 +113,11 @@ namespace YacqPlugin
                 }
                 RaiseRequireReaccept();
             }
+        }
+
+        static YacqFilter()
+        {
+            FilterSymbols = new SymbolTable(typeof(Symbols));
         }
 
         public YacqFilter()

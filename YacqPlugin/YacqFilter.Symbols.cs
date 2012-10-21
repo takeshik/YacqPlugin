@@ -13,7 +13,7 @@ namespace YacqPlugin
     {
         internal static class Symbols
         {
-            [YacqSymbol(DispatchTypes.Unknown, null)]
+            [YacqSymbol(DispatchTypes.None, null)]
             public static Expression Missing(DispatchExpression e, SymbolTable s, Type t)
             {
                 Type type;

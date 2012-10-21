@@ -120,25 +120,25 @@ namespace YacqPlugin
                                 var data = ((IEnumerable) ret)
                                     .Cast<Object>()
                                     .Select(_ => (_ ?? "(null)").ToString())
-                                    .Take(101)
+                                    .Take(Symbols.ReplDumpLimit + 1)
                                     .ToArray();
                                 if (data.Any(s => s.Length > 40))
                                 {
                                     sb.Append("\n");
                                     sb.Append(String.Join(
                                         "\n",
-                                        data.Take(100)
+                                        data.Take(Symbols.ReplDumpLimit)
                                             .Select(s => "    " + s)
                                     ));
-                                    sb.Append(data.Length > 100
+                                    sb.Append(data.Length > Symbols.ReplDumpLimit
                                         ? "    (more...)\n]"
                                         : "\n]"
                                     );
                                 }
                                 else
                                 {
-                                    sb.Append(String.Join(" ", data.Take(100)));
-                                    sb.Append(data.Length > 100
+                                    sb.Append(String.Join(" ", data.Take(Symbols.ReplDumpLimit)));
+                                    sb.Append(data.Length > Symbols.ReplDumpLimit
                                         ? " (more...) ]"
                                         : " ]"
                                     );

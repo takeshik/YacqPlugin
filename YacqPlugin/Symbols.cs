@@ -10,6 +10,21 @@ namespace YacqPlugin
     {
         internal static class Symbols
         {
+            [YacqSymbol("!dumpLimit")]
+            public static readonly Expression DumpLimit
+                = Expression.Property(null, typeof(Symbols), "ReplDumpLimit");
+
+            internal static Int32 ReplDumpLimit
+            {
+                get;
+                set;
+            }
+
+            static Symbols()
+            {
+                ReplDumpLimit = 100;
+            }
+
             [YacqSymbol(DispatchTypes.Method, "clear")]
             public static Expression Clear(DispatchExpression e, SymbolTable s, Type t)
             {
