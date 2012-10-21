@@ -12,6 +12,7 @@ using System.Windows.Media;
 using Mystique;
 using XSpect.Yacq;
 using XSpect.Yacq.Expressions;
+using XSpect.Yacq.Symbols;
 
 namespace YacqPlugin
 {

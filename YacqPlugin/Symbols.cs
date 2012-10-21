@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Linq.Expressions;
 using System.Windows.Controls;
-using XSpect.Yacq;
 using XSpect.Yacq.Expressions;
+using XSpect.Yacq.Symbols;
 
 namespace YacqPlugin
 {

@@ -9,6 +9,7 @@ using Inscribe.Core;
 using Inscribe.Filter;
 using Inscribe.Filter.Core;
 using XSpect.Yacq;
+using XSpect.Yacq.Symbols;
 
 namespace YacqPlugin
 {

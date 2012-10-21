@@ -1,0 +1,6 @@
+[submodule "Yacq"]
+	path = Yacq
+	url = git://github.com/takeshik/yacq.git
+[submodule "Mystique"]
+	path = Mystique
+	url = git://github.com/karno/Mystique.git

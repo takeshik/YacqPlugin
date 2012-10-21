@@ -9,6 +9,7 @@ using Acuerdo.Plugin;
 using Inscribe.Core;
 using Inscribe.Storage;
 using XSpect.Yacq;
+using XSpect.Yacq.Symbols;
 
 namespace YacqPlugin
 {

@@ -4,8 +4,8 @@ using System.Linq.Expressions;
 using Dulcet.Twitter;
 using Inscribe.Common;
 using Inscribe.Filter.Core;
-using XSpect.Yacq;
 using XSpect.Yacq.Expressions;
+using XSpect.Yacq.Symbols;
 
 namespace YacqPlugin
 {
