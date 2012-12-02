@@ -33,7 +33,7 @@ namespace YacqPlugin
             this.textBox.Text = string.Format("YACQ {0} on Krile {1}\r\n", YacqServices.Version, typeof(App).Assembly.GetName().Version);
             this.textBox.Select(this.textBox.Text.Length, 0);
             this.textBox.PreviewKeyDown += this.textBox_PreviewKeyDown;
-            this.symbolTable = new SymbolTable(typeof(Symbols))
+            this.symbolTable = new SymbolTable(YacqFilter.FilterSymbols, typeof(Symbols))
             {
                 {"*textbox*", YacqExpression.Constant(textBox)},
             };

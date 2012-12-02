@@ -103,7 +103,7 @@ namespace YacqPlugin
                 try
                 {
                     this._compiled = new Lazy<Func<TwitterStatusBase, bool>>(() =>
-                        YacqServices.ParseFunc<TwitterStatusBase, bool>(new SymbolTable(typeof(Symbols)), this.Query).Compile(),
+                        YacqServices.ParseFunc<TwitterStatusBase, bool>(FilterSymbols, this.Query).Compile(),
                         true
                     );
                 }
